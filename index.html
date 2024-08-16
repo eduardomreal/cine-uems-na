@@ -8,7 +8,7 @@
     <title>Cine UEMS</title>
   </head>
   <body>
-      <img src="uems-na.jpeg" alt="some text"  width=300 height=200>  
+      <img src="uems-na.jpeg" alt="some text"  width=250 height=150>  
       <h1 style="color: #444451;">Cine UEMS</h1>
       <div class="movie-container">
         <label> Selecione um filme:</label>
@@ -29,13 +29,13 @@
         </li>
         <li>
           <div class="seat sold"></div>
-          <small>Ocupada/Vendida</small>
+          <small>Ocupada</small>
         </li>
       </ul>
       <div class="container">
         <div class="screen"></div>
         <div class="row">
-          <div class="seat" id="1">1</div>
+          <div class="seat">1</div>
           <div class="seat">2</div>        
           <div class="seat">3</div>       
           <div class="seat">4</div>        
@@ -118,19 +118,20 @@
           <label for="fone" style="color: white;">Telefone</label>
           <input type="tel" name="telefone" placeholder="Fone"/><br><br>
           <label for="poltrona" style="color: white;">Número da poltrona</label>
-          <input type="number" name="poltrona" placeholder="Poltrona"/><br><br>
+          <input type="text" name="poltrona" id="polt" placeholder="Poltrona"/><br><br>
           <input type="submit">
         </form>
     </div>
+    
       <!--<script>
         let form = document.querySelector("form")
         form.addEventListener("submit", (e)=>{
           e.preventDefault();
           let data = new FormData(form);
           fetch
-      })-->
+      }
 
-      </script>
+      </script>-->
       
       <script src="script.js"></script>
   </body>

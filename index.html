@@ -35,8 +35,8 @@
       <div class="container">
         <div class="screen"></div>
         <div class="row">
-          <div class="seat">1</div>
-          <div class="seat">2</div>        
+          <div class="seat"><button onclick="test(1)">1</button></div>
+          <div class="seat"><button onclick="test(2)">2</button></div>        
           <div class="seat">3</div>       
           <div class="seat">4</div>        
           <div class="seat">5</div>        
@@ -107,7 +107,14 @@
           <div class="seat">64</div>
         </div>
       </div>
-
+      
+      <script>
+        function test(s){
+          document.getElementById('polt').value=s;
+          console.log(s);
+          return false;
+        }        
+      </script>
       <!--<p class="text">
         Você selecionou <span id="count">0</span> poltronas. Total R$: <span id="total">0</span>
       </p>-->

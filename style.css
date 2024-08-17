@@ -38,7 +38,8 @@ body {
 }
 
 .seat {
-  background-color: #444451;
+  /*background-color: #444451;*/
+  background-color: green;
   height: 30px;
   width: 32px;
   margin: 3px;
@@ -48,12 +49,26 @@ body {
   border-top-right-radius: 10px;
 }
 
-.seat.selected {
+.btn_seat {
+  /*background-color: #444451;*/
   background-color: green;
+  color: white;
+  font-weight: bold;
+  height: 28px;
+  width: 30px;
+  margin: 1px;
+  font-size: 16px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: blue;
 }
 
 .seat.sold {
-  background-color: #fff;
+  background-color: red;
 }
 
 .seat:nth-of-type(8) {
